@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Lock Bot</string>
+    <string name="label1">SET YOUR PASSWORD</string>
+    <string name="pwlabel">Password</string>
+    <string name="reenterlabel">Reenter password</string>
+    <string name="setpwd">Set password</string>
+    <string name="checkbox">YOU HAVENT ANOTHER CHANCE TO CHANGE THIS PASSWORD</string>
+    <string name="label2">Select one</string>
+    <string name="radiobtn1">Calculator</string>
+    <string name="radiobtn2">Call Recorder</string>
+    <string name="autocomplete1">When you select the item you have no longer able to change it.When you are going to unlock the folder,you have to use your password as the input </string>
+    <string name="calequal">=</string>
+    <string name="caldelete">DELETE</string>
+    <string name="calone">1</string>
+    <string name="caltwo">2</string>
+    <string name="calthree">3</string>
+    <string name="calfour">4</string>
+    <string name="calfive">5</string>
+    <string name="calsix">6</string>
+    <string name="calseven">7</string>
+    <string name="caleight">8</string>
+    <string name="calnine">9</string>
+    <string name="calzero">0</string>
+    <string name="calplus">+</string>
+    <string name="caldivide">/</string>
+    <string name="calminus">-</string>
+    <string name="calmultiply">x</string>
+    <string name="caldot">.</string>
+</resources>
