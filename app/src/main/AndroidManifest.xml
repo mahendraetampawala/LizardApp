@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        
         <activity android:name=".resourceManager"
             android:theme="@style/AppTheme"/>
         <activity android:name=".Setpassword" />
@@ -22,7 +24,7 @@
             </intent-filter>
 
 
-            
+
         </activity>
 
         <meta-data
