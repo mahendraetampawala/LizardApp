@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     tools:context=".MainActivity"
-    android:background="@drawable/dark">
+    android:background="@drawable/photo">
 
 
     <EditText
@@ -18,8 +18,9 @@
         android:drawableStart="@drawable/ic_lock_24"
         android:ems="10"
         android:fontFamily="@font/aclonica"
+        android:hint="@string/Username"
         android:inputType="number"
-        android:text="@string/password"
+        android:textAlignment="center"
         android:textColor="#C6FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/confirmupdate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +36,9 @@
         android:drawableStart="@drawable/ic_lock_24"
         android:ems="10"
         android:fontFamily="@font/aclonica"
+        android:hint="@string/Username"
         android:inputType="number"
-        android:text="@string/confirmation"
+        android:textAlignment="center"
         android:textColor="#C6FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,8 +79,9 @@
         android:drawableStart="@drawable/ic_baseline_account_circle_24"
         android:ems="10"
         android:fontFamily="@font/aclonica"
+        android:hint="@string/Username"
         android:inputType="textPersonName"
-        android:text="@string/Username"
+        android:textAlignment="center"
         android:textColor="#C6FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/uppwttxt"
         app:layout_constraintEnd_toEndOf="parent"

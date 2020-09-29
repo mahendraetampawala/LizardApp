@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/photo"
     android:orientation="vertical">
 
 
@@ -16,18 +16,20 @@
 
         <TextView
             android:id="@+id/display"
-            android:layout_width="201dp"
+            android:layout_width="208dp"
             android:layout_height="114dp"
 
-            android:background="#63696969"
+
+            android:textAlignment="center"
             android:textSize="30sp" />
 
         <TextView
             android:id="@+id/display3"
-            android:layout_width="268dp"
+            android:layout_width="203dp"
             android:layout_height="114dp"
 
-            android:background="#63696969"
+
+            android:textAlignment="center"
             android:textSize="30sp" />
 
 
@@ -46,6 +48,7 @@
             android:layout_margin="1dp"
             android:layout_weight="0.25"
             android:background="@drawable/rounded_corners"
+            android:textAlignment="center"
             android:textColor="#ECF0F1"
             android:textSize="30sp" />
 
