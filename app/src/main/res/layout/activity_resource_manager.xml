@@ -63,6 +63,7 @@
         android:layout_height="38dp"
         android:background="@drawable/btn_rounded"
         android:fontFamily="@font/aclonica"
+
         android:textColor="#C6FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
