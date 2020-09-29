@@ -7,5 +7,9 @@
 <color name="btn_clr">#1970B5</color>
 <color name="operator_btn_clr">#34D5C5</color>
 <color name="green">#5FCAC0</color>
+    <color name="colorRecycleItem">#F8F8FF</color>
+    <color name="colorRecycleText">#FFFFFF</color>
+    <color name="colorRecycleFileText">#000000</color>
+    <color name="colorRecycleDateText">#B2BEB5</color>
 </resources>
 

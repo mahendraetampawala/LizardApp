@@ -24,7 +24,7 @@ public class Setpassword extends AppCompatActivity {
     SQLiteDatabase sqLiteDatabase;
     DatabaseHelper db;
     private RadioGroup radioGroup;
-    private RadioButton rbutton1,rbutton2;
+    private RadioButton rbutton1,rbutton2,rbutton3;
     private Button next;
     SharedPreferences preferences;
     TextView textview;
@@ -141,12 +141,16 @@ public class Setpassword extends AppCompatActivity {
         RadioButton radio2 = findViewById(R.id.calrb);
         radio2.setText(R.string.radiobtn1);
 
+        RadioButton radio3 = findViewById(R.id.recycleBin);
+        radio3.setText(R.string.radiobtn3);
+
         TextView auto1 = findViewById(R.id.autocompletetxt);
         auto1.setText(R.string.autocomplete1);
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         rbutton1 = (RadioButton) findViewById(R.id.recorderrb);
         rbutton2 = (RadioButton) findViewById(R.id.calrb);
+        rbutton3 = (RadioButton) findViewById(R.id.recycleBin);
         next = (Button) findViewById(R.id.proceedbtn);
 
 
@@ -241,6 +245,24 @@ public class Setpassword extends AppCompatActivity {
                             startActivity(intent);
 
                         }
+
+
+                        //Intent intent = new Intent(getApplicationContext(), callrecorder.class);
+                        //startActivity((intent));
+                    } else if (rbutton3.isChecked()) {
+
+//                        preferences=getSharedPreferences("preferences",MODE_PRIVATE);
+//                        SharedPreferences.Editor editor= preferences.edit();
+//                        editor.putBoolean("once3",false);
+//                        editor.apply();
+//                        boolean once3=preferences.getBoolean("once3",true);
+//                        if(once3!=true){
+                             Intent intent = new Intent(getApplicationContext(), RecycleBin.class);
+                            startActivity((intent));
+//                            Intent intent=new Intent(Setpassword.this,RecycleBin.class);
+//                            startActivity(intent);
+
+//                        }
 
 
                         //Intent intent = new Intent(getApplicationContext(), callrecorder.class);

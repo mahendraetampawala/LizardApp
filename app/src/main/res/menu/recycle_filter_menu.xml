@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/filterFileList"
+        android:icon="@drawable/ic_baseline_filter_list"
+        android:title="@string/filterFileList"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/allFiles"
+                android:title="@string/allFiles" />
+            <item
+                android:id="@+id/filterFilesByDocs"
+                android:title="@string/filterFilesByDocs" />
+            <item
+                android:id="@+id/filterFilesByImages"
+                android:title="@string/filterFilesByImages" />
+            <item
+                android:id="@+id/filterFilesByVids"
+                android:title="@string/filterFilesByVids" />
+        </menu>
+    </item>
+</menu>

@@ -105,7 +105,7 @@
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="191dp"
-        android:layout_height="54dp"
+        android:layout_height="88dp"
         android:background="@drawable/edit_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,6 +132,16 @@
             android:background="#0C0D79C1"
             android:fontFamily="@font/aclonica"
             android:text="Call Recorder"
+            android:textColor="#C6FFFFFF"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/recycleBin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0D79C1"
+            android:fontFamily="@font/aclonica"
+            android:text="Recycle Bin"
             android:textColor="#C6FFFFFF"
             android:textSize="17sp" />
     </RadioGroup>
