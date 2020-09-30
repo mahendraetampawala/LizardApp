@@ -8,6 +8,13 @@
     tools:context=".MainActivity"
     android:background="@drawable/photo">
 
+    <include
+        android:id="@+id/toolbarX"
+        layout="@layout/toolbar"
+        android:background="#FFFDFD"
+        app:navigationIcon="@android:drawable/btn_star" />
+
+
 
     <EditText
         android:id="@+id/uppwttxt"
@@ -63,7 +70,6 @@
         android:layout_height="38dp"
         android:background="@drawable/btn_rounded"
         android:fontFamily="@font/aclonica"
-
         android:textColor="#C6FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -89,19 +95,19 @@
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="412dp"
-        android:layout_height="73dp"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />
+    <!-- <androidx.appcompat.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="412dp"
+         android:layout_height="73dp"
+         android:background="?attr/colorPrimary"
+         android:minHeight="?attr/actionBarSize"
+         android:theme="?attr/actionBarTheme"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintVertical_bias="0.0"
+         app:navigationIcon="@android:drawable/ic_menu_sort_by_size" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

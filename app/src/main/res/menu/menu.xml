@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/search"
+        android:id="@+id/sea"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Home"
+        android:id="@+id/set"
+        />
+
+        <item
+            android:title="Update Password"
+            android:id="@+id/log"
+            />
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_cycle"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Cycling" />
+
+        <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Bus" />
+
+        <item
+            android:id="@+id/nav_plane"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Plane" />
+    </group>
+
+
+
+</menu>

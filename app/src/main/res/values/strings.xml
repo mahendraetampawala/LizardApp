@@ -39,5 +39,9 @@
 <dimen name="nav_header_vertical_spacing">8dp</dimen>
 <dimen name="nav_header_height">176dp</dimen>
 <dimen name="fab_margin">16dp</dimen>
+    <string name="search">Search</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
 
 </resources>
