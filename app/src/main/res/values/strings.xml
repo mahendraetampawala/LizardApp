@@ -44,4 +44,58 @@
     <string name="navigation_drawer_close">Close</string>
 
 
+
+    <string name="search">Search</string>
+    <string name="account">MyAccount</string>
+    <string name="settings">Settings</string>
+    <string name="logout">LogOut</string>
+    <string name="homeTextUpper">Lock</string>
+    <string name="homeTextLower">Your Important Items</string>
+    <string name="homeLogo">homeLogo</string>
+    <string name="btnHomeImages">Images</string>
+    <string name="homeImageView">imagesHome</string>
+    <string name="abnHomeAudio">Audio</string>
+    <string name="homeAudioImgView">audioHome</string>
+    <string name="btnHomeVideo">Video</string>
+    <string name="btnHomeCallRecords">Call Records</string>
+    <string name="homeVideoImgView">TODO</string>
+    <string name="homeCallImgView">TODO</string>
+    <string name="galleryAddImageImgView">addImages</string>
+    <string name="galleryTxtAddImg">Add</string>
+    <string name="galleryImgRetreive">retrieve</string>
+    <string name="galleryTxtRetreive">Secure</string>
+    <string name="galleryImgRestore">imgRestore</string>
+    <string name="galleryTxtRestore">Restore</string>
+    <string name="galleryImgDelete">imgDelete</string>
+    <string name="galleryTxtDelete">Delete</string>
+    <string name="send_to_db">send_to_db</string>
+    <string name="btn_send_to_db">send_to_db</string>
+    <string name="sendCount">0</string>
+    <string name="InsertImage_testImg">testImage</string>
+    <string name="text_gallery_picture_count">1</string>
+    <string name="imageviewer">imageViewer</string>
+    <string name="save_image">Save Image</string>
+    <string name="enter_the_image_name_here">Enter the name here</string>
+    <string name="move_to_show_activity">Show Images</string>
+    <string name="image_details_single_new">Image Details</string>
+    <string name="image_single_new">image_single_new</string>
+    <string name="show_images">Show</string>
+    <string name="txtAddImages">Click on image to add files...</string>
+    <string name="txtInsert">Insert</string>
+    <string name="txtShow">Show</string>
+    <string name="txtRestore">Restore</string>
+    <string name="txtDelete">Delete</string>
+    <string name="dialog_box_txt">You can restore your files to device storage or delete your files temporarily or permanently
+    Once you deleted you can retrieve files. If you delete files permanently those files cannot be retrieved, those files cannot be seen
+        in your device storage.
+    </string>
+    <string name="dialog_box_txt_restore">Restore</string>
+    <string name="dialog_box_delete_permanently">Delete Permanently</string>
+    <string name="dialog_box_delete">Delete</string>
+    <string name="dialog_box_image">dialog_box_image</string>
+
+
+
+
+
 </resources>

@@ -7,5 +7,7 @@
 <color name="btn_clr">#1970B5</color>
 <color name="operator_btn_clr">#34D5C5</color>
 <color name="green">#5FCAC0</color>
+    <color name="colorCards">#9E00BD</color>
+    <color name="Card_1">#DB81ED</color>
 </resources>
 

@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         if(once1!=true){
             // Intent intent = new Intent(getApplicationContext(), callrecorder.class);
             //startActivity((intent));
-            Intent intent=new Intent(MainActivity.this,Calculator.class);
+            Intent intent=new Intent(MainActivity.this, com.example.haider.callrecorder.Splashh.class);
             startActivity(intent);
 
         }
