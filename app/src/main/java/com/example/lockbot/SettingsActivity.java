@@ -1,4 +1,4 @@
-package com.example.haider.callrecorder;
+package com.example.lockbot;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;

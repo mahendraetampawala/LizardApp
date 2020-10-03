@@ -35,4 +35,11 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
     implementation 'com.basgeekball:awesome-validation:4.2'
 
+
+
+
+
+
+
+
 }

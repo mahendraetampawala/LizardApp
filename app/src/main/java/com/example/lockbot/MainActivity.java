@@ -1,5 +1,5 @@
-package com.example.lockbot;
 
+package com.example.lockbot;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

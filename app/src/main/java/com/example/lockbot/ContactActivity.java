@@ -1,4 +1,4 @@
-package com.example.haider.callrecorder;
+package com.example.lockbot;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
