@@ -63,7 +63,7 @@ public class MainHas extends AppCompatActivity
     SharedPreferences prefs;
     SharedPreferences.Editor editor;
 
-//hasantha
+//hasantha//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
