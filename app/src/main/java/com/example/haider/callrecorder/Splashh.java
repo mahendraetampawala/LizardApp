@@ -12,12 +12,11 @@ public class Splashh extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashh);
 
-
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-
+//hasantha
                 Intent i = new Intent(Splashh.this, PermissionsActivity.class);
                 i.setFlags(i.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY); //don't push on stack
                 startActivity(i);

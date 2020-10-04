@@ -18,7 +18,7 @@ public class Dialpad_main extends AppCompatActivity {
             @Override
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_main);
+                setContentView(R.layout.main_has);
 
                 etNumber =findViewById(R.id.et_number);
                 btCall =findViewById(R.id.bt_call);

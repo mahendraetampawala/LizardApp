@@ -30,7 +30,7 @@ public class PermissionsActivity extends AppCompatActivity {
 
         if (isReadPhoneStatePermission() && isReadContacts() && isWriteExternalStorage() && isRecordAudio() && isReadExternalStorage()
                 && isProcessOutgoingPermission() && isWriteContats() && isReadCallLogs()) {
-            Intent intent = new Intent(PermissionsActivity.this, MainActivity.class);
+            Intent intent = new Intent(PermissionsActivity.this, MainHas.class);
             //intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY); //don't push on stack
             startActivity(intent);
         } else {
@@ -42,7 +42,7 @@ public class PermissionsActivity extends AppCompatActivity {
     public void givePermissions(View view) {
         if (isReadPhoneStatePermission() && isReadContacts() && isWriteExternalStorage() && isRecordAudio() && isReadExternalStorage()
                 && isProcessOutgoingPermission() && isWriteContats() && isReadCallLogs()) {
-            Intent intent = new Intent(PermissionsActivity.this, MainActivity.class);
+            Intent intent = new Intent(PermissionsActivity.this, MainHas.class);
             //intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY); //don't push on stack
 
             startActivity(intent);
@@ -238,7 +238,7 @@ public class PermissionsActivity extends AppCompatActivity {
         if (requestCode == MY_PERMISSIONS_READ_CALL_LOGS) {
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(this, "Read Calls Permissions Granted", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(PermissionsActivity.this, MainActivity.class);
+                Intent intent = new Intent(PermissionsActivity.this, MainHas.class);
                 //intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY); //don't push on stack
                 startActivity(intent);
             } else {

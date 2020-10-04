@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseHandler extends SQLiteOpenHelper {
+public class DatabaseHandlerHas extends SQLiteOpenHelper {
 
 	// All Static variables
 	// Database Version
@@ -32,7 +32,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
 
-	public DatabaseHandler(Context context) {
+	public DatabaseHandlerHas(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.haider.callrecorder.Contact;
-import com.example.haider.callrecorder.DatabaseHandler;
+import com.example.haider.callrecorder.DatabaseHandlerHas;
 import com.example.haider.callrecorder.R;
 
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class FavouritesActivity extends AppCompatActivity {
     ListView lv;
 
     SharedPreferences prefs;
-    DatabaseHandler db;
+    DatabaseHandlerHas db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class FavouritesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_favourites);
 
 
-        db = new DatabaseHandler(FavouritesActivity.this);
+        db = new DatabaseHandlerHas(FavouritesActivity.this);
         List<Contact> contacts = db.getAllContacts();
 
         List<Contact> favContacts = new ArrayList<>();

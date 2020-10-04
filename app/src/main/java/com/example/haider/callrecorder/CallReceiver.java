@@ -6,7 +6,7 @@ import android.media.MediaPlayer;
 import java.util.Date;
 
 /**
- * Created by haider on 9/22/2018.
+ * Created by hasantha.
  */
 public class CallReceiver extends PhonecallReceiver {
 
@@ -15,7 +15,7 @@ public class CallReceiver extends PhonecallReceiver {
     @Override
     protected void onIncomingCallStarted(Context ctx, String number, Date start, String name, boolean isIncoming, String path) {
 
-        DatabaseHandler db = new DatabaseHandler(ctx);
+        DatabaseHandlerHas db = new DatabaseHandlerHas(ctx);
         Contact contact = new Contact();
         contact.setName(name);
         contact.setPhoneNumber(number);
@@ -28,7 +28,7 @@ public class CallReceiver extends PhonecallReceiver {
 
     @Override
     protected void onOutgoingCallStarted(Context ctx, String number, Date start, String name, boolean isIncoming, String path) {
-        DatabaseHandler db = new DatabaseHandler(ctx);
+        DatabaseHandlerHas db = new DatabaseHandlerHas(ctx);
         Contact contact = new Contact();
         contact.setName(name);
         contact.setPhoneNumber(number);

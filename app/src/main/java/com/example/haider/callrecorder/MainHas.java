@@ -43,14 +43,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class MainActivity extends AppCompatActivity
+public class MainHas extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemLongClickListener, SeekBar.OnSeekBarChangeListener, AdapterView.OnItemClickListener, View.OnClickListener {
 
     Contact[] array;
     CustomAdapter adapter;
     ListView lv;
 
-    DatabaseHandler db;
+    DatabaseHandlerHas db;
     List<Contact> contacts;
 
     MediaPlayer mediaPlayer;
@@ -67,14 +67,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_has);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        prefs = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+        prefs = PreferenceManager.getDefaultSharedPreferences(MainHas.this);
         editor = prefs.edit();
 
-        db = new DatabaseHandler(MainActivity.this);
+        db = new DatabaseHandlerHas(MainHas.this);
         contacts = db.getAllContacts();
 
         if (contacts.size() != 0) {
@@ -151,11 +151,11 @@ public class MainActivity extends AppCompatActivity
                 // search was detached/closed
                 contacts = db.getAllContacts();
                 if (contacts.size() != 0) {
-                    adapter = new CustomAdapter(MainActivity.this, R.layout.row_contacts, contacts);
+                    adapter = new CustomAdapter(MainHas.this, R.layout.row_contacts, contacts);
                     lv = (ListView) findViewById(R.id.mListView);
                     lv.setAdapter(adapter);
-                    lv.setOnItemLongClickListener(MainActivity.this);
-                    lv.setOnItemClickListener(MainActivity.this);
+                    lv.setOnItemLongClickListener(MainHas.this);
+                    lv.setOnItemClickListener(MainHas.this);
                     adapter.notifyDataSetChanged();
                 }
             }
@@ -217,17 +217,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_all) {
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            Intent intent = new Intent(MainHas.this, MainHas.class);
             intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY); //don't push on stack
             startActivity(intent);
         } else if (id == R.id.nav_settings) {
 
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            Intent intent = new Intent(MainHas.this, SettingsActivity.class);
             intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY); //don't push on stack
             startActivity(intent);
 
         } else if (id == R.id.nav_fav) {
-            Intent intent = new Intent(MainActivity.this, FavouritesActivity.class);
+            Intent intent = new Intent(MainHas.this, FavouritesActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_share) {
@@ -238,7 +238,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(Intent.createChooser(sendIntent, "Share via"));
 
         } else if (id == R.id.nav_contact) {
-            Intent intent = new Intent(MainActivity.this, ContactActivity.class);
+            Intent intent = new Intent(MainHas.this, ContactActivity.class);
             startActivity(intent);
         }
 
@@ -320,7 +320,7 @@ public class MainActivity extends AppCompatActivity
                             found = false;
 
                         } else {
-                            Toast.makeText(MainActivity.this, "No Call Selected", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainHas.this, "No Call Selected", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
@@ -390,7 +390,7 @@ public class MainActivity extends AppCompatActivity
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         final View layout = inflater.inflate(R.layout.custom_dialog, (ViewGroup) findViewById(R.id.mydialog));
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(MainHas.this);
         TextView title = new TextView(this);
         title.setText("Choose Option");
         title.setPadding(40, 40, 40, 40);
@@ -416,7 +416,7 @@ public class MainActivity extends AppCompatActivity
                 Contact contact = new Contact();
                 contact.setID(Integer.parseInt(rowId));
                 db.updateContact(contact);
-                Toast.makeText(MainActivity.this, "Favourited", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainHas.this, "Favourited", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -432,12 +432,12 @@ public class MainActivity extends AppCompatActivity
                     Contact contact = new Contact();
                     contact.setID(Integer.parseInt(rowId));
                     db.deleteContact(contact);
-                    Toast.makeText(MainActivity.this, "Deleted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainHas.this, "Deleted", Toast.LENGTH_SHORT).show();
                     adapter.notifyDataSetChanged();
                 }
                 else
                 {
-                    Toast.makeText(MainActivity.this, "Please Allow in Settings to Delete Calls", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainHas.this, "Please Allow in Settings to Delete Calls", Toast.LENGTH_SHORT).show();
                 }
                 
 
@@ -456,7 +456,7 @@ public class MainActivity extends AppCompatActivity
                     contact.setID(Integer.parseInt(rowId));
                     contact.setName(newName);
                     db.updateRename(contact);
-                    Toast.makeText(MainActivity.this, "Note Added.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainHas.this, "Note Added.", Toast.LENGTH_SHORT).show();
                 }
 
             }

@@ -34,7 +34,7 @@
         </activity>
         <activity android:name="com.example.haider.callrecorder.PermissionsActivity" />
         <activity
-            android:name="com.example.haider.callrecorder.MainActivity"
+            android:name="com.example.haider.callrecorder.MainHas"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -50,26 +50,26 @@
         <activity
             android:name="com.example.haider.callrecorder.FavouritesListView.FavouritesActivity"
             android:label="Favourite"
-            android:parentActivityName="com.example.haider.callrecorder.MainActivity">
+            android:parentActivityName="com.example.haider.callrecorder.MainHas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.haider.callrecorder.MainActivity" />
+                android:value="com.example.haider.callrecorder.MainHas" />
         </activity>
         <activity
             android:name="com.example.haider.callrecorder.ContactActivity"
             android:label="Contact Us"
-            android:parentActivityName="com.example.haider.callrecorder.MainActivity">
+            android:parentActivityName="com.example.haider.callrecorder.MainHas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.haider.callrecorder.MainActivity" />
+                android:value="com.example.haider.callrecorder.MainHas" />
         </activity>
         <activity
             android:name="com.example.haider.callrecorder.SettingsActivity"
             android:label="Settings"
-            android:parentActivityName="com.example.haider.callrecorder.MainActivity">
+            android:parentActivityName="com.example.haider.callrecorder.MainHas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.haider.callrecorder.MainActivity" />
+                android:value="com.example.haider.callrecorder.MainHas" />
         </activity>
     </application>
 
