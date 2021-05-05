@@ -1,1 +1,1 @@
-# Lizard ANDROID App
+# Lizard App
